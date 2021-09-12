@@ -1,0 +1,17 @@
+.btnFilter {
+    background-color: #0D3674;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    border: #FFFFFF;
+    width: 118px;
+    height: 45px;
+    display: flex;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 150;
+    padding: 9px;
+    margin-left: 1158px;
+    margin-bottom: 58px;
+    position:static;
+}

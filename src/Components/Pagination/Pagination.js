@@ -1,4 +1,8 @@
 import React from 'react';
+// import {Button} from '@material-ui/core'
+import KeyboardArrowLeftOutlinedIcon from '@material-ui/icons/KeyboardArrowLeftOutlined';
+import KeyboardArrowRightOutlinedIcon from '@material-ui/icons/KeyboardArrowRightOutlined';
+import './Pagination.css'
 
 const Pagination = ({prev, next, onPrev, onNext}) => {
 
@@ -11,18 +15,20 @@ const Pagination = ({prev, next, onPrev, onNext}) => {
     }
 
     return (
-        <nav>
-            <ul>
+        <nav className="btns">
+            <ul className="btnsPrevNext">
                 { prev ? (                
-                <li>
-                    <button onClick={handlePrev}>Atrás</button>
-                </li>
+                    <button className="btnPrev" onClick={handlePrev}>
+                        <KeyboardArrowLeftOutlinedIcon />
+                        Atrás
+                    </button>
                 ) : null }
-
+                
                 { next ? (
-                <li>
-                    <button onClick={handleNext}>Siguiente</button>
-                </li>
+                    <button className="btnNext" onClick={handleNext}>
+                        Siguiente
+                        <KeyboardArrowRightOutlinedIcon />
+                    </button>
                 ) : null }
 
             </ul>

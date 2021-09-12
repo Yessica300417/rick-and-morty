@@ -1,0 +1,18 @@
+.btnNext, .btnPrev {
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+    width: 110px;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 15px;
+    margin-left: 42px;
+}
+
+.btnNext, .btnPrev:hover {
+    background-image: linear-gradient(#50C5B7, #9CEC58, #F0F455);
+    box-shadow: 0 0 10px #50C5B7 , 0 0 25px #9CEC58;
+    transition-delay: 1s;
+}

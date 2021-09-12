@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Pages/Home/Home';
 import CharacterInformation from './Pages/CharacterInformation/CharacterInformation';
 import CharacterFavorites from './Pages/Favorites/CharacterFavorites';
+import CharacterFilter from './Pages/Filter/CharactersFilter'
 import Navbar from './Components/Navbar/Navbar';
 
 
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route exact path="/favorites">
             <CharacterFavorites />
+          </Route>
+          <Route exact path="/filter">
+            <CharacterFilter />
           </Route>
         </Switch>
     </BrowserRouter>

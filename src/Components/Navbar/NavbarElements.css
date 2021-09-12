@@ -1,4 +1,16 @@
 .navLogo {
-    background-color: burlywood;
-    
+    background-color:#181818;   
+    margin-top: -49px; 
+    display:flex;
+    width: 100%;
+}
+
+.logImg {
+    width: 13em;
+    padding-top: 18px;
+}
+
+.logName {
+    /* justify-content: center; */
+    width: 15px;
 }
