@@ -1,4 +1,4 @@
-.colCards {
+/* .colCards {
     display:flex;
     background-color: rgba(77, 213, 246, 0.966);
     border-radius: 8px;
@@ -6,7 +6,7 @@
     color: #FFFFFF;
     overflow: hidden;
     /* text-align: center; */
-    transition: all 0.25s;
+    /* transition: all 0.25s;
     width: 484px;
     height: 195px;
     padding: 20px;
@@ -23,4 +23,61 @@
 .imgCharacter {
     width: 13rem;
     height: 12rem;
+} */ 
+
+.characters {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
 }
+
+.colCards {
+    width: 30%;
+    background-color:cadetblue;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 3px 6px #d9e5d6;
+    display: flex;
+}
+
+img {
+    width: 50%;
+}
+
+.cardBody {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-size: 40px;
+    color: #82BF45
+}
+
+.specie {
+    text-align: center;
+    padding: 5px;
+    background-color: #364150;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin: 3px 0px;
+}
+
+.status {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 4px;
+    background-color: #364150;
+    border-radius: 4px;
+    font-size: 9px;
+    margin: 3px 0px;
+}
+

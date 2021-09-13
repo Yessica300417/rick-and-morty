@@ -6,7 +6,9 @@ import './FilteredOut.css'
 
 const FilteredOut = () => {
     return(
-        <button className="btnFilter">
+        <button 
+            
+            className="btnFilter">
             <Link to="/filter"  />
             <MapOutlinedIcon />
             Filtrar

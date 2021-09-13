@@ -17,16 +17,18 @@ function App() {
     <BrowserRouter>
     <Switch>
           <Route exact path="/">
-          <Navbar />
+           <Navbar />
             <Home />
           </Route>
           <Route exact path="/information">
+            <Navbar />
             <CharacterInformation />
           </Route>
           <Route exact path="/favorites">
             <CharacterFavorites />
           </Route>
           <Route exact path="/filter">
+            <Navbar />
             <CharacterFilter />
           </Route>
         </Switch>
