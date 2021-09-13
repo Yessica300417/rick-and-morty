@@ -2,12 +2,14 @@ import React, { useEffect,useState } from 'react';
 import Characters from '../../Components/Characters/Characters'
 import Pagination from '../../Components/Pagination/Pagination'
 import FilteredOut from '../../Components/FilteredOut/FilteredOut'
+import Search from '../../Components/Search/Search'
 import './Home.css'
 
 const Home = () => {
 
     const [characters, setCharacters] = useState([]);
     const [info, setInfo] = useState({});
+    const [text, setText] = useState('');
 
     const initialUrl= "https://rickandmortyapi.com/api/character"
 
@@ -29,13 +31,16 @@ const Home = () => {
         fetchCharacters(info.next);
     }
 
-
     useEffect(() => {
         fetchCharacters(initialUrl);
     }, [])
 
+    const leakedCharacters = characters.filter(character => character.name.
+        toLowerCase().includes(text.toLocaleLowerCase()))
+
     return (
     <div className="container">
+        <Search text={text} setText={setText}/>
         <FilteredOut />
         <h2 className="tittle">Personajes</h2>
         <Pagination 
@@ -44,7 +49,7 @@ const Home = () => {
             onPrev={onPrev} 
             onNext={onNext}
         />
-        <Characters characters={characters} />
+        <Characters text={text} characters={leakedCharacters} />
     </div>
     );
 }

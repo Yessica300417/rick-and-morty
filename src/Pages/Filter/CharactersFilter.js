@@ -2,7 +2,14 @@ import React from 'react';
 
 const CharacterFilter = () => {
     return(
-        <h1>Aquí se visualizan los filtros</h1>
+        <div>
+            <p>Especie</p>
+            <p>Estatus</p>
+            <p>Tipo</p>
+            <p>Género</p>
+            <button className="btnSearch">Buscar</button>
+        </div>
+       
     );
 }
 
