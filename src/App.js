@@ -2,7 +2,8 @@ import React from 'react';
 import Home from './Pages/Home/Home';
 import CharacterInformation from './Pages/CharacterInformation/CharacterInformation';
 import CharacterFavorites from './Pages/Favorites/CharacterFavorites';
-import CharacterFilter from './Pages/Filter/CharactersFilter'
+import CharacterFilter from './Pages/Filter/CharactersFilter';
+import ViewFiltered from './Pages/ViewFiltered/ViewFiltered';
 import Navbar from './Components/Navbar/Navbar';
 
 
@@ -30,6 +31,10 @@ function App() {
           <Route exact path="/filter">
             <Navbar />
             <CharacterFilter />
+          </Route>
+          <Route exact path="/viewFilter">
+            <Navbar />
+            <ViewFiltered />
           </Route>
         </Switch>
     </BrowserRouter>

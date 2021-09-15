@@ -28,7 +28,6 @@ const Characters = ({characters =[], text}) => {
                     </div>
                 ))
              }
-
             </div>
         </div>
     );

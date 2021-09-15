@@ -1,0 +1,48 @@
+ul {
+    list-style: none;
+}
+
+.filterOrder {
+    width: 100%;
+    /* background-image: url('../../Assets/fondo-rick-morty-portal.jpg'); */
+    /* background-color: #000000; */
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterOrder li {
+    background-color: rgba(63, 230, 230, 0.8);
+    color: #000000;
+    border-radius: 5px;
+    padding: 1px;
+    width: 365px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 50;
+    box-shadow: 0 0 10px #50C5B7 , 0 0 25px #9CEC58;
+}
+
+.filterOrder li:hover { /*falta cambiar de color, solo es de mientras*/
+    background-color: #472b92;
+}
+
+.filterOrder li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.filterOrder li:hover > ul {
+    display: block;
+}
+
+
+
+
+
